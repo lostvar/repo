@@ -1,2 +1,2 @@
 # repo
-Personal collection of iOS tweaks
+A personal Cydia repository hosting a collection of iOS tweaks.
