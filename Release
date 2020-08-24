@@ -1,0 +1,8 @@
+Origin: Lostvar's Repo
+Label: lostvar
+Suite: stable
+Version: 1.0
+Codename: lostvar
+Architecture: iphoneos-arm
+Components: main
+Description: Lostvar's tweaks

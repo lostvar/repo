@@ -1,0 +1,188 @@
+Package: apt7-lib
+Name: APT 0.7 Strict (lib)
+Version: 0.7.25.3-16z
+Architecture: iphoneos-arm
+Description: the advanced packaging library from Debian
+Installed-Size: 1660
+Maintainer: Jay Freeman (saurik) <saurik@saurik.com>
+Essential: yes
+Priority: required
+Pre-Depends: dpkg (>= 1.14.25-8)
+Depends: bzip2, dpkg (>= 1.14.25-9), gnupg, gzip, lzma
+Replaces: apt (<< 1:0-1), apt7 (<< 0.7.20.2-3), apt7-ssl
+Breaks: cydia (<< 1.1.10), apt7 (<< 0.7.25.3-7), aptitude (<< 0.4.11.11-6)
+Conflicts: apt7-ssl
+Provides: apt7-ssl
+Section: System
+Filename: ./debs/apt7-lib_0.7.25.3-16z_iphoneos-arm.deb
+Size: 673404
+MD5sum: 3f591cf087060b9a717e003f20aa61d4
+
+Package: com.saurik.substrate.safemode
+Name: Substrate Safe Mode
+Version: 0.9.6001z
+Architecture: iphoneos-arm
+Description: safe mode safety extension (safe)
+Installed-Size: 156
+Maintainer: Jay Freeman (saurik) <saurik@saurik.com>
+Author: Jay Freeman (saurik) <saurik@saurik.com>
+Priority: optional
+Depends: mobilesubstrate (>= 0.9.3367+38)
+Conflicts: safe-mode-fixer-ios7
+Replaces: safe-mode-fixer-ios7
+Section: System
+Filename: ./debs/com.saurik.substrate.safemode_0.9.6001z_iphoneos-arm.deb
+Size: 20740
+MD5sum: e59ee7a3d6aa89f5ff042888f1f0cba0
+
+Package: mobilesubstrate
+Name: Cydia Substrate
+Version: 0.9.6301z
+Architecture: iphoneos-arm
+Description: powerful code insertion platform
+Maintainer: Jay Freeman (saurik) <saurik@saurik.com>
+Author: Jay Freeman (saurik) <saurik@saurik.com>
+Priority: optional
+Depends: com.saurik.substrate.safemode
+Pre-Depends: dpkg (>= 1.14.25-8)
+Replaces: cycript (<= 0.9.594)
+Conflicts: me.devbug.msreloadfix, com.r3pwn.startsubstrate, com.ragemasta.bootstrap
+Section: System
+Filename: ./debs/mobilesubstrate_0.9.6301z_iphoneos-arm.deb
+Size: 218746
+MD5sum: 43cbadab626df6916a3f4331c485068e
+
+Package: preferenceloader
+Name: PreferenceLoader
+Version: 2.2.4z
+Architecture: iphoneos-arm
+Description: load preferences in style
+Installed-Size: 525
+Maintainer: BigBoss <bigboss@thebigboss.org>
+Author: Sam Bingner <maintainer@sbdhi.com>
+Depends: firmware (>= 7.0), mobilesubstrate
+Section: System
+Filename: ./debs/preferenceloader_2.2.4z_iphoneos-arm.deb
+Size: 61104
+MD5sum: 38303b584f68cf62c16f8ddd074748e6
+
+Package: com.saurik.impactor
+Name: Cydia Eraser
+Version: 0.9.43z
+Architecture: iphoneos-arm
+Description: specific utility to unjailbreak most devices
+Maintainer: Jay Freeman (saurik) <saurik@saurik.com>
+Author: Jay Freeman (saurik) <saurik@saurik.com>
+Priority: optional
+Depends: firmware (>= 7.1), firmware (<= 10.2.1)
+Breaks: com.saurik.patych (<< 1.0.1)
+Icon: file:///Applications/Eraser.app/Icon-60.png
+Section: Utilities
+Filename: ./debs/com.saurik.impactor_0.9.43z_iphoneos-arm.deb
+Size: 519146
+MD5sum: 0ee87a72054f1ced7f2abce604568726
+
+Package: com.unlimapps.uasharedtools
+Name: uasharedtools
+Version: 2.1r-66z
+Architecture: iphoneos-arm
+Description: shared tools for unlimapps tweaks
+Installed-Size: 48121
+Maintainer: BigBoss <bigboss@thebigboss.org>
+Author: UnlimApps Inc. <support@unlimapps.com>
+Conflicts: com.yourepo.abo1bs.uasharedtoolsno-ads, com.hackyouriphone.uasharedtools
+Depends: firmware (>= 5.0), mobilesubstrate
+Section: Development
+Filename: ./debs/com.unlimapps.uasharedtools_2.1r-66z_iphoneos-arm.deb
+Size: 16889496
+MD5sum: 8a88122f7d20bec92f9d2facf621e622
+
+Package: com.unlimapps.uaupdatetools
+Name: App Admin
+Version: 1.0r-61z
+Architecture: iphoneos-arm
+Description: downgrade apps to any previous version
+Installed-Size: 3622
+Author: UnlimApps Inc. <support@unlimapps.com>
+Maintainer: BigBoss <bigboss@thebigboss.org>
+Depends: mobilesubstrate, firmware (>= 8.0), com.unlimapps.uasharedtools (>= 2.0r-46)
+Conflicts: it.marcocristalli.asupdatehider
+Section: Tweaks
+Filename: ./debs/com.unlimapps.uaupdatetools_1.0r-61z_iphoneos-arm.deb
+Size: 1084686
+MD5sum: fd094b721056131ea8623b3a677ebc4b
+
+Package: net.angelxwind.appsyncunified
+Name: AppSync Unified
+Version: 80.0z
+Architecture: iphoneos-arm
+Description: enable the ability to install unsigned/fakesigned iOS applications
+Installed-Size: 496
+Maintainer: Karen <karaen@akemi.ai>
+Author: Linus Yang, Karen <karen@akemi.ai>
+Depends: firmware (>= 5.0), mobilesubstrate
+Provides: appsync
+Replaces: us.hackulo.appsync50
+Section: Tweaks
+Filename: ./debs/net.angelxwind.appsyncunified_80.0z_iphoneos-arm.deb
+Size: 63796
+MD5sum: 32f280a81fb7b1307d535215d42ec9f9
+
+Package: openssh
+Name: OpenSSH
+Version: 6.7p1-13z
+Architecture: iphoneos-arm
+Description: secure remote access between machines
+Installed-Size: 4736
+Maintainer: Jay Freeman (saurik) <saurik@saurik.com>
+Priority: important
+Pre-Depends: dpkg (>= 1.14.25-8)
+Depends: openssl
+Section: System
+Filename: ./debs/openssh_6.7p1-13z_iphoneos-arm.deb
+Size: 2048444
+MD5sum: 771d535eaa1e85c64d916f42c83583fa
+
+Package: openssl
+Name: OpenSSL
+Version: 0.9.8zg-13z
+Architecture: iphoneos-arm
+Description: SSL library and cryptographic tools
+Installed-Size: 6164
+Maintainer: Jay Freeman (saurik) <saurik@saurik.com>
+Pre-Depends: dpkg (>= 1.14.25-8)
+Priority: standard
+Section: System
+Filename: ./debs/openssl_0.9.8zg-13z_iphoneos-arm.deb
+Size: 1747728
+MD5sum: 823d79028f5017905086a5508535e671
+
+Package: com.swiftyper.wechatredenvelop
+Name: WeChatRedEnvelop
+Version: 2.1.1z
+Architecture: iphoneos-arm
+Description: grab WeChat red packets automatically
+Installed-Size: 274
+Maintainer: BigBoss <bigboss@thebigboss.org>
+Author: Zhichao Yang <wordbeyondyoung@gmail.com>
+Depends: firmware (>= 7.0), mobilesubstrate
+Section: Tweaks
+Filename: ./debs/com.swiftyper.wechatredenvelop_2.1.1z_iphoneos-arm.deb
+Size: 54894
+MD5sum: f52e2f0b12c2f9fb8ab5d079f1ae858d
+
+Package: org.thebigboss.watchdogpro
+Name: Watchdog Pro
+Version: 1.0.2z
+Architecture: iphoneos-arm
+Description: full featured app backgrounding management
+Installed-Size: 507
+Maintainer: BigBoss <bigboss@thebigboss.org>
+Author: Allan Kerr <Personal.AllanKerr@gmail.com>
+Depends: firmware (>= 8.0), mobilesubstrate (>= 0.9.5000), preferenceloader (>= 2.2.2)
+Conflicts: org.thebigboss.watchdoglite, com.theronen.watchdog
+Icon: file:///Library/PreferenceBundles/WatchdogPreferences.bundle/Watchdog@2x.png
+Section: Tweaks
+Filename: ./debs/org.thebigboss.watchdogpro_1.0.2z_iphoneos-arm.deb
+Size: 119492
+MD5sum: 96aa480135b81091c526ec5a50c2184b
